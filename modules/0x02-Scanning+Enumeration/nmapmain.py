@@ -6,25 +6,41 @@
 #-:-:-:-:-:-:-:-:-:-:-:-:#
 
 #Author : @_tID
-#This script is a part of TIDoS Framework
 #https://github.com/0xInfection/TIDoS-Framework
 
 from __future__ import print_function
 import os, sys, urllib, urllib2, time
 from time import sleep
 from core.Core.colors import *
+from string import Template
+
+# sys.path.append("../..")
+from modules.log_module import *
+
+print('this is good stuff')
 
 def nmapmain(web):
-
     web = web.replace('https://','')
     web = web.replace('http://','')
-    print("")
+    
+    nmap_obj = { "addr": "hi" }
+
+    default_input = False;
+    while(default_input != 'exit'):
+
+        nmap_string = ""
+        for values in namp_obj:
+            nmap_string = "".join(v for _, v in sorted())
+        print("Current command: ", nmap_string, "\n")
+
+        default_input = raw_input('Type: ')
+    """print("")
     print(""+P+"                               _______      _____                 ")
     time.sleep(0.1)
     print(""+P+"                               \      \    /     \  ____  ______  ")
     time.sleep(0.1)
     print(""+P+"                               /   |   \  /  \ /  \/__  \ \____ \ ")
-    time.sleep(0.1)
+    time.sleep(0.1)f
     print(""+P+"                              /    |    \/    Y    \/ __ \|  |_> >")
     time.sleep(0.1)
     print(""+P+"                              \____|__  /\____|__  (____  /   __/ ")
@@ -1368,4 +1384,4 @@ def nmapmain(web):
         except Exception as e:
             print(R+'\n                       [!] Fatal exception encountered !')
             print(R+'                       [!] Exception : '+str(e))
-    nmapsx(web)
+    nmapsx(web) """
